@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-position: 100vw auto;
+    background-size: cover;
+}
+
+header{
+    background-color: var(--clr-transparent);
+    padding: 10px;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+header nav > *{
+    flex: 1;
+    min-width: 200px;
+    background-color: red;
+}
