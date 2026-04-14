@@ -1,3 +1,7 @@
 :root {
     --clr-transparent: #00000080;
+    --clr-bg: #af64388e;
+    --clr-primary-gray: gray;
+
+    --icon-size: 2rem;
 }
