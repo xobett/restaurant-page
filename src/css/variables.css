@@ -1,7 +1,10 @@
 :root {
     --clr-transparent: #00000080;
-    --clr-bg: #af64388e;
+    --clr-bg: lch(50.11% 45.8 54.83 / 0.6);
+    --clr-white: #ffffff;
     --clr-primary-gray: gray;
 
     --icon-size: 2rem;
+    --sidebar-radius: 0.7fr;
+    --title-size: 1.6rem;
 }

@@ -1,5 +1,3 @@
-import "../css/reset.css";
-import "../css/variables.css";
-import { foo } from "./landing.js";
+import { main } from "./main.js";
 
-console.log(foo);
+main.render();
