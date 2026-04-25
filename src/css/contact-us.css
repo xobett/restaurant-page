@@ -1,0 +1,21 @@
+.content-container.contact-us {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.contact-us .card-content {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-us .image-container {
+    padding: 0 10px;
+}
+
+.contact-us .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

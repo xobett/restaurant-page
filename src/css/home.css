@@ -1,0 +1,8 @@
+.content-container.home {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.home .card-content {
+    place-self: center;
+    text-align: center;
+}

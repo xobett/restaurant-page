@@ -1,0 +1,32 @@
+.card {
+    height: 100%;
+
+    display: grid;
+    grid-template: 100% / 100%;
+    
+    background-image:  linear-gradient(to bottom, #000000, #00000080), url('../assets/imgs/background.jpg');
+    background-size: cover;
+    background-position: center;
+
+    color: var(--clr-white);
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: var(--card-title-size);
+}
+
+.card-content {
+    font-size: var(--card-content-size);
+}
+
+.content-container {
+    display: grid;
+    gap: 10px;
+}
+
+.card-title,
+.card-footer {
+    text-align: center;
+    place-self: center;
+}

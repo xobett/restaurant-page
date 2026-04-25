@@ -1,0 +1,26 @@
+.picture {
+    width: 80%;
+    height: 60%;
+    background-color: aliceblue;
+    place-self: center;
+
+    border-radius: 14px;
+    border: 2px solid var(--clr-transparent-white);
+}
+
+.picture img {
+}
+
+.picture:hover {
+    border: 2px solid transparent;
+}
+
+.large-picture {
+    grid-column: 1 / 3;
+    width: 90%;
+    height: 75%;
+
+    background-image: url('../assets/imgs/icon-1.jpg');
+    background-position: center;
+    background-size: cover;
+}

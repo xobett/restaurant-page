@@ -1,7 +1,11 @@
 //STYLES
 import "../css/reset.css";
+import "../css/xobett-reset.css";
 import "../css/variables.css";
 import '../css/main.css';
+import '../css/card.css';
+import '../css/review.css';
+import '../css/picture.css';
 
 //COMPONENTS
 import { home } from "./home.js";

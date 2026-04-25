@@ -1,0 +1,17 @@
+.content-container.location {
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.location .card-content {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.location .image-container {
+    padding: 0 10px;
+    width: 85%;
+}

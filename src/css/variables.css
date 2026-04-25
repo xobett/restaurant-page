@@ -1,10 +1,16 @@
 :root {
     --clr-transparent: #00000080;
-    --clr-bg: lch(50.11% 45.8 54.83 / 0.6);
+    --grdnt-sunset: linear-gradient(to bottom, #ebbbbb 0%, #ca9d61 100%);
+    --grdnt-black:linear-gradient(to bottom, #27272c 0%, #c77f4f 100%);
+    --clr-bg: #17161b;
+    --clr-transparent-white: #ffffff63;
     --clr-white: #ffffff;
+    --clr-black: #000000;
     --clr-primary-gray: gray;
 
     --icon-size: 2rem;
     --sidebar-radius: 0.7fr;
     --title-size: 1.6rem;
+    --card-title-size: 2.7rem;
+    --card-content-size: 1.1rem;
 }
