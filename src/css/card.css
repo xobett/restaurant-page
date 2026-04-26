@@ -9,6 +9,8 @@
     background-position: center;
 
     color: var(--clr-white);
+
+    overflow: hidden;
 }
 
 .card-title {
@@ -29,4 +31,30 @@
 .card-footer {
     text-align: center;
     place-self: center;
+}
+
+.content-container {
+    display: grid; /* keep layout type */
+
+    opacity: 0;
+    transform: translateY(100%);
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease,
+        visibility 0s linear 0.6s;
+}
+
+.content-container.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease,
+        visibility 0s;
 }
