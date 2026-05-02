@@ -3,6 +3,7 @@
 }
 
 .contact-us .card-content {
+    padding: 0 10px;
     text-align: center;
 
     display: flex;

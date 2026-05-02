@@ -1,4 +1,5 @@
 .card {
+    position: relative;
     height: 100%;
 
     display: grid;
@@ -31,14 +32,25 @@
 .card-footer {
     text-align: center;
     place-self: center;
+
+}
+
+.no-transition .content-container {
+    transition: none;
 }
 
 .content-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
     /*HIDDEN STYLE*/
     transform: translateY(100%);
     opacity: 0;
 
-    transition: all 1s ease-in-out;
+    transition: 
+        transform 1s ease-in-out,
+        opacity 1s ease-in-out;
 }
 
 .content-container.active {

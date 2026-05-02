@@ -1,16 +1,56 @@
 import '../css/location.css';
+import barImage from '../assets/imgs/bar.jpg';
+
 export { location };
 
 const location = (() => {
+    const contentContainer = document.createElement('div');
+    contentContainer.classList.add('content-container', 'location');
+
     const cardTitle = document.createElement('div');
     cardTitle.classList.add('card-title');
-    cardTitle.textContent = "SNEAK A BITE OF HAPPINESS";
+    cardTitle.textContent = "Come visit us!";
     
     const cardContent = document.createElement('div');
-    cardTitle.classList.add('card-content');
-    cardTitle.textContent = "Welcome to Sneaky Bar! Where great flavors and good times come with a playful twist. Tucked away but hard to forget, we serve up irresistible bites and perfectly crafted drinks in a vivid and inviting atmosphere. Come in, unwind, and treat yourself, you've found your new favorite spot.";
+    cardContent.classList.add('card-content');
+
+    const descriptionContainer = document.createElement('div');
+    descriptionContainer.textContent = "We're located at \n 826 E Fictional Street, Fictional, FC 11111"; 
     
+    const imgContainer = document.createElement('div');
+    imgContainer.classList.add('image-container');
+
+    const img = document.createElement('img');
+    img.src = barImage;
+    img.alt = 'Image of the outsides of Sneaky Bar';
+
+    imgContainer.appendChild(img);
+    cardContent.append(descriptionContainer, imgContainer);
+
     const cardFooter = document.createElement('div');
-    cardTitle.classList.add('card-footer');
-    cardTitle.textContent = "GO TO MENU";
+    cardFooter.classList.add('card-footer');
+    const a = document.createElement('a');
+    a.href = '#';
+    a.textContent = "GO TO CONTACT US";
+    a.dataset['module'] = 'contactUs';
+    cardFooter.appendChild(a);
+
+    contentContainer.append(cardTitle, cardContent, cardFooter);
+
+    function disableModule(){
+        contentContainer.inert = true;
+        contentContainer.classList.remove('active');
+    }
+    
+    function enableModule(){
+        contentContainer.inert = false;
+        contentContainer.classList.add('active');
+    }
+    
+    function addToCard(card){
+        card.append(contentContainer);
+        disableModule();
+    }
+
+    return { addToCard, enableModule, disableModule };
 })();
