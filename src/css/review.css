@@ -1,14 +1,33 @@
 .review {
     width: 80%;
     height: 60%;
+    padding: 10px;
 
-    background-color: aliceblue;
+    text-align: center;
     place-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
 
+    color: white;
     border-radius: 14px;
-    border: 2px solid var(--clr-transparent-white);
+    background: var(--grdnt-slick-carbon);
+
+    transition:
+        transform 0.2s ease-in;
 }
 
-.picture:hover {
-    border: 2px solid transparent;
+.review:hover{
+    transform: translateY(-3px);
+}
+
+.review p:nth-child(2){
+    font-size: 0.96rem;
+}
+
+@media(max-width: 45em){
+    .review {
+        width: 100%;
+        border-radius: 0;
+    }
 }

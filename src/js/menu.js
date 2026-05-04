@@ -1,6 +1,10 @@
 import '../css/menu.css';
-import icon2 from '../assets/imgs/icon-2.jpg';
-import icon3 from '../assets/imgs/icon-3.jpg';
+import backdoorNachosImg from '../assets/imgs/backdoor-nachos.jpg';
+import allewayLoadedFriesImg from '../assets/imgs/alleyway-loaded-fries.jpg';
+import hiddenStashWingsImg from '../assets/imgs/hidden-stash-wings.jpg';
+import secretPassageSlidersImg from '../assets/imgs/secret-passage-sliders.jpg';
+import getawayBurgerImg from '../assets/imgs/getaway-burger.jpg';
+import vaultMozzarellaSticksImg from '../assets/imgs/vault-mozzarella-sticks.jpg';
 export { menu };
 
 const menu = (() => {
@@ -16,12 +20,12 @@ const menu = (() => {
 
     const ul = document.createElement('ul');
     const menuItemsInfo = [
-        { itemName: 'Backdoor Nachos', imgSrc: icon2, alt:'Picture of Backdoor Nachos' },
-        { itemName: 'Alleyway Loaded Fries', imgSrc: icon3, alt:'Picture of Alleyway Loaded Fries' },
-        { itemName: 'Backdoor Nachos', imgSrc: icon2, alt:'Picture of Backdoor Nachos' },
-        { itemName: 'Backdoor Nachos', imgSrc: icon2, alt:'Picture of Backdoor Nachos' },
-        { itemName: 'Backdoor Nachos', imgSrc: icon2, alt:'Picture of Backdoor Nachos' },
-        { itemName: 'Backdoor Nachos', imgSrc: icon2, alt:'Picture of Backdoor Nachos' },
+        { itemName: 'Backdoor Nachos', imgSrc: backdoorNachosImg, alt:'Picture of The Backdoor Nachos' },
+        { itemName: 'Alleyway Loaded Fries', imgSrc: allewayLoadedFriesImg, alt:'Picture of The Alleyway Loaded Fries' },
+        { itemName: 'Hidden Stash Wings', imgSrc: hiddenStashWingsImg, alt:'Picture of The Hidden Stash Wings' },
+        { itemName: 'Secret Passage Sliders', imgSrc: secretPassageSlidersImg, alt:'Picture of The Secret Passage Sliders' },
+        { itemName: 'The Getaway Burger', imgSrc: getawayBurgerImg, alt:'Picture of The Getaway Burger' },
+        { itemName: 'Vault Mozarella Sticks', imgSrc: vaultMozzarellaSticksImg, alt:'Picture of The Vault Mozzarella Sticks' },
     ]
 
     menuItemsInfo.forEach((item) => {

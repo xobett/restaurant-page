@@ -1,7 +1,10 @@
 :root {
+    --grdnt-slick-carbon: linear-gradient(to top, #323232 0%, #3F3F3F 40%, #1C1C1C 150%);
+    --grdnt-sunset:linear-gradient(to bottom, #27272c 0%, #be9a6b 100%);
+    
     --clr-transparent: #00000080;
-    --grdnt-sunset: linear-gradient(to bottom, #ebbbbb 0%, #ca9d61 100%);
-    --grdnt-black:linear-gradient(to bottom, #27272c 0%, #c77f4f 100%);
+    --clr-carbon: #3f3f3f;
+    --clr-yellowish-sunset: #be9a6b;
     --clr-bg: #17161b;
     --clr-transparent-white: #ffffff63;
     --clr-white: #ffffff;

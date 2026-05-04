@@ -13,7 +13,7 @@ const contactUs = (() => {
     cardContent.classList.add('card-content');
 
     const messageContainer = document.createElement('div');
-    messageContainer.textContent = 'Wether it\'s to make a sneaky reservation, or get additional info on our job openings, make sure to contact us through any of the following:';
+    messageContainer.textContent = 'Whether it\'s to make a sneaky reservation or get additional information about our job openings, make sure to contact us through any of our available channels:';
     
     const contactInfoContainer = document.createElement('div');
     contactInfoContainer.classList.add('contact-info');

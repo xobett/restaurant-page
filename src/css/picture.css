@@ -5,22 +5,27 @@
     place-self: center;
 
     border-radius: 14px;
-    border: 2px solid var(--clr-transparent-white);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease-in;
 }
 
 .picture img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    transform-origin: center;
 }
 
 .picture:hover {
-    border: 2px solid transparent;
+    transform: translateY(-3px);
 }
 
 .large-picture {
     grid-column: 1 / 3;
     width: 90%;
     height: 75%;
-
-    background-image: url('../assets/imgs/icon-1.jpg');
-    background-position: center;
-    background-size: cover;
 }

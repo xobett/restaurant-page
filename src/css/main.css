@@ -5,9 +5,8 @@ body {
     height: 100vh;
 
     width: 100%;
-    background: var(--grdnt-black);
-    background-size: cover;
-    background-position: center;
+    background: var(--grdnt-sunset);
+    background-repeat: no-repeat;
 }
 
 /* NAVBAR */
@@ -150,19 +149,6 @@ div#content{
     grid-template-rows: repeat(3, 1fr);
 }
 
-
-.picture,
-.review {
-    transition: 
-        transform 0.3s ease-in-out,
-        border 0.3s ease-in-out;
-}
-
-.picture:hover,
-.review:hover {
-    transform: translateY(-2px);
-}
-
 .reviews-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -170,14 +156,106 @@ div#content{
 }
 
 @media (max-width: 45em) {
+    html,
+    body{
+        overflow-x: hidden;
+    }
+
+    .no-transition .nav-tabs {
+        transition: none;
+    }
+
     .nav-tabs {
-        height: 100vh;
-        position: fixed;
-        background-color: rgba(70, 131, 180, 0.8);
-        inset: 0 0 0 40%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 90%;
+        z-index: 1;
+
+        background: var(--clr-carbon);
 
         flex-direction: column;
+
+        pointer-events: all;
+        transform: translateX(100%);
+        transition: 
+            transform 0.4s ease-in-out;
+    }
+
+    .nav-tabs.active {
+        transform: translateX(0);
+    }
+
+    header {
+        padding: 20px 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-content: center;
+    }
+
+    nav {
+        background-image: url('../assets/burger-icon.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .logo-container a:nth-child(2){
+        display: none;
+    }
+
+    div#content {
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+        grid-auto-rows: 100%;
+    }
+
+    .card {
+        order: 1;
+    }
+
+    .gallery {
+        order: 2;
+        background: var(--clr-yellowish-sunset);
+        position: relative;
+        
+        padding-top: 10px;
+    }
+
+    .gallery::after{
+        content: "Gallery";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-top: 10px;
+
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    .reviews { 
+        order: 3;
+        background: var(--clr-carbon);
+
+        position: relative;
+        padding-top: 10px;
+    }
+
+    .reviews::after{
+        content: "Our awesome customers said...";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-top: 10px;
+
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.3rem;
     }
 }
-
-/* CONTENT */

@@ -3,6 +3,7 @@
 }
 
 .home .card-content {
+    padding: 10px;
     place-self: center;
     text-align: center;
 }
